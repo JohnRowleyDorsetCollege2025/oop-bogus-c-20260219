@@ -1,0 +1,29 @@
+﻿@using BogusDemo.Domain.Models
+@model IReadOnlyList<ProductRow>
+
+<h1>Product</h1>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Email</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@product.Category</td>
+                <td>@product.Stock</td>
+            </tr>
+        }
+    </tbody>
+</table>

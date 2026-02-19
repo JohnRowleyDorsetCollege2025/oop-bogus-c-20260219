@@ -26,7 +26,7 @@ namespace BogusDemo.Domain.Services
 
         }
 
-        public List<ProductRow> GenerateFakeProducts(int count)
+        public static List<ProductRow> GenerateFakeProducts(int count)
         {
             var products = new List<ProductRow>();
 
