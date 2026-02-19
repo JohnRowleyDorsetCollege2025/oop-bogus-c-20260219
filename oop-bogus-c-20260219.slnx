@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="BogusDemo.API/BogusDemo.API.csproj" />
+  <Project Path="BogusDemo.Domain/BogusDemo.Domain.csproj" />
+  <Project Path="BogusDemo.MVC/BogusDemo.MVC.csproj" />
+</Solution>

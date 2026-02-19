@@ -1,0 +1,26 @@
+﻿
+@using BogusDemo.Domain.Models
+@model IReadOnlyList<PersonRow>
+
+<h1>People</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>FullName</th>
+            <th>Email</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var person in Model)
+        {
+            <tr>
+                <td>@person.FullName</td>
+                <td>@person.Email</td>
+                <td>@person.City</td>
+            </tr>
+        }
+    </tbody>
+    </table>
